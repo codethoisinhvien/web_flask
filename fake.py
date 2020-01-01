@@ -1,18 +1,21 @@
 from peewee import *
 
-
-from  src.model import User
-from  src.model import Subject
-from  src.model import Exam
+from src.model import Exam
+from src.model import Room
+from src.model import Subject
+from src.model import User
+from src.model import UserExamSubject,Schedule,RoomSeat,Seat,Information
 db = MySQLDatabase('examreg', user="root", password='', charset='utf8mb4', host='127.0.0.1', port=3306)
 
 
 def create_table():
-    models= [User,Subject,Exam]
+    models = [User, Subject, Exam, Room,UserExamSubject,Schedule,RoomSeat,Seat,Information]
     db.drop_tables(models)
     db.create_tables(models, safe=True)
+
+
 def fake_user():
-    data =[
+    data = [
         {
             "username": 17020001,
             "password": 17020001,
@@ -82,5 +85,39 @@ def fake_user():
             User.create(**data_dict)
 
 
+def fake_room():
+    data = [{"name": "1", "location": "5861 Cody Trail", "max_student": 100},
+            {"name": "2", "location": "0 Sherman Center", "max_student": 2},
+            {"name": "3", "location": "98527 Thierer Crossing", "max_student": 100},
+            {"name": "4", "location": "46586 Forest Dale Hill", "max_student": 100},
+            {"name": "5", "location": "38 Butternut Alley", "max_student": 100},
+            {"name": "Phòng đặc biệt", "location": "5129 Talmadge Parkway", "max_student": 100}]
+    with db.atomic():
+        for data_dict in data:
+            Room.create(**data_dict)
+
+
+def fake_subject():
+    data = [{"name": "Phát triển ứng dụng web", "code": "INT 3306"},
+            {"name": "Trí tuệ nhân tạo ", "code": "INT 3305"}
+
+            ]
+    with db.atomic():
+        for data_dict in data:
+            Subject.create(**data_dict)
+
+
+def fake_exam():
+    data = [{"name": "Kì thi Học kì 1", "status": True},
+
+            ]
+    with db.atomic():
+        for data_dict in data:
+            Exam.create(**data_dict)
+
+
 create_table()
 fake_user()
+fake_room()
+fake_subject()
+fake_exam()

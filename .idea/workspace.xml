@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c3d9f3-2f1b-43fe-947a-66a7fb856322" name="Default Changelist" comment="" />
+    <list default="true" id="74c3d9f3-2f1b-43fe-947a-66a7fb856322" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/shedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/student_exam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/user_schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/room_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/shedule_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/student_exam_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/user_schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/infomation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/room_seat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/seat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/user_subject_exam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user_authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user_authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +36,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VjcPcCUUulnQgo71j972oKJyRp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask-nextjs/src/model.py" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -110,6 +136,8 @@
       <updated>1577769921388</updated>
       <workItem from="1577769930341" duration="4406000" />
       <workItem from="1577774359413" duration="11768000" />
+      <workItem from="1577796125675" duration="17807000" />
+      <workItem from="1577850816440" duration="16128000" />
     </task>
     <servers />
   </component>
@@ -145,17 +173,17 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1320" height="171" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1577774337125" />
-    <state x="339" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1577796234790">
+    <state x="339" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1577850817719">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="339" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1577796234790" />
+    <state x="339" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1577850817719" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/fake.py</url>
-          <line>14</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
