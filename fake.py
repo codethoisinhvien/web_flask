@@ -4,12 +4,13 @@ from src.model import Exam
 from src.model import Room
 from src.model import Subject
 from src.model import User
-from src.model import UserExamSubject,Schedule,RoomSeat,Seat,Information
+from src.model import UserExamSubject, Schedule, RoomSeat, Seat, Information
+
 db = MySQLDatabase('examreg', user="root", password='', charset='utf8mb4', host='127.0.0.1', port=3306)
 
 
 def create_table():
-    models = [User, Subject, Exam, Room,UserExamSubject,Schedule,RoomSeat,Seat,Information]
+    models = [User, Subject, Exam, Room, UserExamSubject, Schedule, RoomSeat, Seat, Information]
     db.drop_tables(models)
     db.create_tables(models, safe=True)
 
@@ -116,8 +117,26 @@ def fake_exam():
             Exam.create(**data_dict)
 
 
+def fake_seat():
+    data= [{"name": str(i),}for i in range(100)]
+
+
+    with db.atomic():
+        for data_dict in data:
+            Seat.create(**data_dict)
+def fake_room_seat():
+
+
+    with db.atomic():
+        for i in range(100):
+            for j in range(7):
+                if j>0 and i>0:
+                     RoomSeat.create(room_id=j,seat_id=i)
+
 create_table()
 fake_user()
 fake_room()
 fake_subject()
 fake_exam()
+fake_seat()
+fake_room_seat()

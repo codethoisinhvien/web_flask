@@ -1,6 +1,7 @@
 from sched import scheduler
 
 from src.model import Schedule
+from src.model import Information
 import datetime
 
 class ScheduleController:
@@ -53,3 +54,18 @@ class ScheduleController:
             return {"success": True, "message": "Thành công", }
         except Exception as e:
             return {"success": False, "message": "Thất bại"}
+    def get_student_in_schedule(self,schedule_id):
+        schedule = Information()
+        datas =schedule.get_student_in_schedule(schedule_id)
+        data=[]
+        for i in datas:
+
+            print(i)
+            try:
+             i['day']=i['day'].strftime('%Y-%m-%d')
+            except:
+                pass
+            i['time_end']=i['time_end'].strftime('%H:%M')
+            i['time_start'] = i['time_start'].strftime('%H:%M')
+            data.append(i)
+        return {"success": True, "data": data}

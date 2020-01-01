@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c3d9f3-2f1b-43fe-947a-66a7fb856322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/room.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/shedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/student_exam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/user_schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/room_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/shedule_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/student_exam_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/user_schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/infomation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/room.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/room_seat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/seat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/user_subject_exam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/exam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/exam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/room.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/shedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/shedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/student_exam.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/student_exam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/subject.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/subject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/user_authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user_authentication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/shedule_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/shedule_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/user_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/infomation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/infomation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask-nextjs/src/model.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FontEnd" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,7 +135,8 @@
       <workItem from="1577769930341" duration="4406000" />
       <workItem from="1577774359413" duration="11768000" />
       <workItem from="1577796125675" duration="17807000" />
-      <workItem from="1577850816440" duration="16128000" />
+      <workItem from="1577850816440" duration="18019000" />
+      <workItem from="1577876258538" duration="14981000" />
     </task>
     <servers />
   </component>
@@ -153,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="383" y="173" width="590" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.736@0.0.1366.736" timestamp="1577772514542" />
-    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577773672271">
+    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577871649676">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1577773672271" />
+    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1577871649676" />
     <state width="1320" height="171" key="GridCell.Tab.0.bottom" timestamp="1577774337125">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -173,18 +172,27 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1320" height="171" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1577774337125" />
-    <state x="339" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1577850817719">
+    <state x="339" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1577871627674">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="339" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1577850817719" />
+    <state x="339" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1577871627674" />
+    <state x="346" y="57" width="672" height="678" key="search.everywhere.popup" timestamp="1577888185420">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="346" y="57" width="672" height="678" key="search.everywhere.popup/0.0.1366.736@0.0.1366.736" timestamp="1577888185420" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/fake.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/model/infomation.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

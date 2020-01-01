@@ -11,6 +11,6 @@ class User(BaseModel):
     role = IntegerField(default=1)
 
     def get_user_by_username(self, username):
-        query = self.select().where(username=username).limit(1)
+        query = self.select().where(username==username).limit(1)
         print(query)
         return query.execute();

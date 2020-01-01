@@ -2,19 +2,24 @@ import datetime
 
 from peewee import *
 
-from .base_model import BaseModel
-from .exam import Exam
-from .room import Room
+from .base_model import BaseModel, db
+from .room_seat import RoomSeat
+
 from .subject import Subject
+from .room import Room
+from .seat import Seat
+from .exam import Exam
+from .user import User
+
 
 
 class Schedule(BaseModel):
     subject_id = ForeignKeyField(Subject)
     room_id = ForeignKeyField(Room, )
     exam_id = ForeignKeyField(Exam)
-    day = DateField(default=datetime.date.today)
-    time_start = TimeField()
-    time_end = TimeField()
+    day = DateField(default=datetime.date.today,null=False)
+    time_start = TimeField(null=False)
+    time_end = TimeField(null=False)
     no_of_student = IntegerField(default=0)
 
     def get_list(self):
@@ -30,3 +35,7 @@ class Schedule(BaseModel):
                                                                                               Schedule
                                                                                               ).dicts()
         return query
+
+
+
+

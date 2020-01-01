@@ -2,11 +2,14 @@
 
 from src.model import User
 
-
+from src.common.authentication import authenticate,create_token
 class UserController:
     def login(self, username, password):
-
-        return {"success": True, "token": "12312", "username": "Giang1334", "full_name": "Nguyen duc hai"}
+        user = authenticate(username,password)
+        if user is not None:
+            print(user)
+            return {"success":True,"token":create_token({"id":user.id,"username":user.username,"role":user.role}),"username":user.username,"full_name":user.full_name,"code":user.code}
+        return {"success": False, "message":"Mật khẩu hoặc tài khoản không đúng"}
 
     def create(self, username, password, code, full_name, role):
 
